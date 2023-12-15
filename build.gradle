@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'mysql:mysql-connector-java:8.0.33'
+    implementation 'org.hibernate:hibernate-core:5.6.0.Final'
+    implementation 'org.hibernate:hibernate-c3p0:5.6.0.Final' // C3P0 Connection Pooling
+}
+
+test {
+    useJUnitPlatform()
+}
